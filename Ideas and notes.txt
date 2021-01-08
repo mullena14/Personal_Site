@@ -1,0 +1,1 @@
+idea: when mouse hovers over profile photo, it changes to show me and Fubz (or just some fun photo)
