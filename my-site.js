@@ -4,41 +4,39 @@
 
   function init() {
 
-  }
+    let button = qsa("button");
 
-  /**
- * Make sure to always add a descriptive comment above
- * every function detailing what it's purpose is
- * @param {variabletype} someVariable This is a description of someVariable, including, perhaps, preconditions.
- * @returns {returntype} A description of what this function is actually returning
- */
-function exampleFunction2(someVariable) {
-  /* SOME CODE */
-  return something;
-}
+    button[0].addEventListener("click", home);
+    button[1].addEventListener("click", engineer);
+    button[2].addEventListener("click", visual);
+    button[3].addEventListener("click", model);
+    button[4].addEventListener("click", entre);
+    button[5].addEventListener("click", misc);
+
+  }
 
   function home() {
     window.location = "https://mullena14.github.io/Personal_Site/";
   }
 
-  function home() {
+  function engineer() {
     window.location = "https://mullena14.github.io/Personal_Site/engineer.html";
   }
 
-  function home() {
-    window.location = "https://mullena14.github.io/Personal_Site/";
+  function visual() {
+    window.location = "https://mullena14.github.io/Personal_Site/visual.html";
   }
 
-  function home() {
-    window.location = "https://mullena14.github.io/Personal_Site/";
+  function model() {
+    window.location = "https://mullena14.github.io/Personal_Site/model.html";
   }
 
-  function home() {
-    window.location = "https://mullena14.github.io/Personal_Site/";
+  function entre() {
+    window.location = "https://mullena14.github.io/Personal_Site/entre.html";
   }
 
-  function home() {
-    window.location = "https://mullena14.github.io/Personal_Site/";
+  function misc() {
+    window.location = "https://mullena14.github.io/Personal_Site/misc.html";
   }
 
   /**
@@ -57,6 +55,10 @@ function exampleFunction2(someVariable) {
    */
   function qsa(selector) {
     return document.querySelectorAll(selector);
+  }
+
+  function gen(tagName) {
+    return document.createElement(tagname);
   }
 
 })();
