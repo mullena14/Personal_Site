@@ -5,7 +5,9 @@
   function init() {
 
     let button = qsa("button");
+    let check = 0;
 
+    // SHOULD FORMAT THIS LIKE BELOW
     button[0].addEventListener("click", home);
     button[1].addEventListener("click", engineer);
     button[2].addEventListener("click", visual);
@@ -13,18 +15,39 @@
     button[4].addEventListener("click", entre);
     button[5].addEventListener("click", misc);
 
-    // let imgs = qsa("img");
-    // imgs.forEach(dumb);
+    let imgs = qsa("img").forEach(img => {
+      img.addEventListener('click', event => {
+        if(check == 0) {
+          check = enlargeImg(img, check);
+        } else {
+          check = resetImg(img, check);
+        }
+  })
+})
 
   }
 
-  // function dumb(e) {
-  //   e.addEventListener("click", enlarge);
-  // }
-  //
-  // function enlarge(e) {
-  //   e.classname = "enlarge";
-  // }
+  function enlargeImg(img, check) {
+    // img.style.transform = "translate(-50%, -50%)";
+    // img.style.position = "absolute";
+    // img.style.top = "50%";
+    // img.style.left = "50%";
+    // img.style.transform = "scale(3) translate(-50%, -50%)";
+    // img.style.margin = "50vh auto 0";
+    // img.style.transform = "translateY(-50%)";
+    img.style.transform = "scale(3)";
+    img.style.transition = "transform 0.25s ease";
+    check = 1;
+    return check;
+  }
+
+  // Function to reset image size
+  function resetImg(img, check) {
+    img.style.transform = "scale(1)";
+    img.style.transition = "transform 0.25s ease";
+    check = 0;
+    return check;
+  }
 
   function home() {
     window.location = "https://mullena14.github.io/Personal_Site/";

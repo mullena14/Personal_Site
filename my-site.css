@@ -71,7 +71,7 @@ p, h2, h1 {
 
 div > h2, div > h1 {
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 
 .left {
