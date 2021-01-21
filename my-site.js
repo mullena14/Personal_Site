@@ -13,7 +13,18 @@
     button[4].addEventListener("click", entre);
     button[5].addEventListener("click", misc);
 
+    // let imgs = qsa("img");
+    // imgs.forEach(dumb);
+
   }
+
+  // function dumb(e) {
+  //   e.addEventListener("click", enlarge);
+  // }
+  //
+  // function enlarge(e) {
+  //   e.classname = "enlarge";
+  // }
 
   function home() {
     window.location = "https://mullena14.github.io/Personal_Site/";

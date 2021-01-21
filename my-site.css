@@ -19,9 +19,10 @@ body {
 }
 
 img {
-  width: 25%;
+  width: 200px;
   border: 5px solid #ffeb99;
-  margin: 20px;
+  margin: 10px;
+  align-self: flex-start;
 }
 
 div {
@@ -68,6 +69,11 @@ p, h2, h1 {
   margin: 10px;
 }
 
+div > h2, div > h1 {
+  text-align: center;
+  width: 80%;
+}
+
 .left {
   justify-content:flex-start;
   width: 50%;
@@ -81,4 +87,14 @@ p, h2, h1 {
 
 .statement {
   width: auto;
+}
+
+.enlarge {
+  width: 700px;
+  height: auto;
+}
+
+#profile {
+  width: 25%;
+  margin: 20px;
 }
