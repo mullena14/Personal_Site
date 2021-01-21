@@ -35,14 +35,70 @@
         </p>
       </div>
 
-      <div>
-        <h1>Embedded Systems</h1>
+      <div class="expand">
+        <h1>Embedded Systems (ES)</h1>
         <p>
-
+          Embedded software is my primary field of study, and for which I
+          received my B.S. in Engineering from the University of Washington. The
+          majority of my experience comes from working with ARM processors,
+          Arduinos, and RaspberryPis.
         </p>
-        <img src="imgs/engineering/stop_light.jpg" alt="mini stop light using tiva board."/>
-        <img src="imgs/engineering/eye_tracker.jpg" alt="prototype eye tracker."/>
-        <img src="imgs/engineering/capstone.jpg" alt="senior year capstone project."/>
+        <div class="label">
+          <h2> Eye Tracker </h2>
+          <img src="imgs/engineering/eye_tracker.jpg" alt="prototype eye tracker."/>
+          <p>
+            This project was completed with a partner in the span of two weeks.
+            Our goal was to filter the signal coming from two electrodes placed
+            around the eyes and calculate their difference to determine eye
+            position. Sadly, our butterworth analog filter failed to cancel out
+            excess noise and we ended up creating a heart rate monitor. For the
+            end product, the voltage from one electrode was filtered, sampled by
+             our ADC, transfered to our UART via microDMA, and received via BLE
+             on our custom Android app that graphed the signal over time.
+          </p>
+        </div>
+        <div class="label">
+          <h2> Pointilism Printer </h2>
+          <img src="imgs/engineering/capstone.jpg" alt="senior year capstone project."/>
+          <p>
+            This printing robot was designed by myself and a small team as our
+            senior year capstone project. It would receive an image from our UI
+            via wifi, pixelate the image so that it could be drawn with dots,
+            and the naviagated on-top a drawing surface to plot out the image.
+            My primary responsibility on this project was drafting our
+            requirements, 3D printing and assembling custom parts,
+            debugging/testing the full system, and supporting all software
+            development (from UI to FW).
+          </p>
+        </div>
+        <div class="label">
+          <h2> Stop Light </h2>
+          <img src="imgs/engineering/stop_light.jpg" alt="mini stop light using tiva board."/>
+          <p>
+            One of my first projects on a TM4C Tiva Board. I used the IAR
+            Embedded Workbench to develop and test my code. This project used
+            FreeRTOS to control a stoplight with crosswalk buttons.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h1>Field Programmable Gate Arrays (FPGAs)</h1>
+        <p>
+          With ES as my primary field of study, FPGAs come in as a close second.
+          Not only did I teach introductory and intermediate digital logic for a
+          full year, I've also developed multiple pipelined CPUs (one with
+          gates and hierarcy, the other with RTL). I thoroughly enjoy working
+          with FPGAs and would love the chance to use them in my professional
+          life.
+        </p>
+        <div class="label">
+          <h2> Frogger </h2>
+          <img src="imgs/engineering/frogger_win.jpg" alt="winning screen for FGPA frogger."/>
+          <p>
+
+          </p>
+        </div>
       </div>
 
       <div>
@@ -57,6 +113,11 @@
             <li>Java (intermediate)</li>
             <li>Unix bash (intermediate)<li>
           </ul>
+          My first programming language was C/C++, and it remains my most
+          familiar coding language. However, I have also worked professionally
+          with python, matlab, and bash for script creation, including error analysis,
+          unit testing, and process automation. I've also completed several
+          programming courses in Java for data structures and algorithms.
         </p>
       </div>
 
@@ -69,17 +130,11 @@
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
+          You are currently observing my front-end development skills as I teach
+          myself how to build this website from scratch :)
         </p>
+        <img src="imgs/engineering/joke.JPG" alt="coding comic."/>
       </div>
-
-      <div>
-        <h1>Field Programmable Gate Arrays (FPGAs)</h1>
-        <p>
-
-        </p>
-        <img src="imgs/engineering/frogger_win.jpg" alt="winning screen for FGPA frogger."/>
-      </div>
-
 
       <div>
         <h1>Hardware</h1>
@@ -91,7 +146,13 @@
       <div>
         <h1>Systems</h1>
         <p>
-
+          Most of my professional career I have held the title of Systems
+          Engineer. I started as a NASA intern testing flight software, then
+          completed a second internship doing error analysis with Ball
+          Aerospace, and finally I transitioned to full-time Systems Engineer
+          with Philips Oral Health Care. I chose to start my career in Systems
+          Engineering because I like big picture ideas and tend to think of
+          myself as a multi-disaplinary designer.
         </p>
       </div>
 
